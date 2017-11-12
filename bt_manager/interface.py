@@ -4,7 +4,7 @@ import dbus
 import types
 import pprint
 
-from exceptions import BTSignalNameNotRecognisedException
+from .exceptions import BTSignalNameNotRecognisedException
 
 
 def translate_to_dbus_type(typeof, value):

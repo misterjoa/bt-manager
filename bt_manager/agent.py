@@ -2,7 +2,7 @@ from __future__ import unicode_literals
 
 import dbus.service
 
-from exceptions import BTRejectedException
+from .exceptions import BTRejectedException
 
 
 class BTAgent(dbus.service.Object):

@@ -1,17 +1,22 @@
 from __future__ import unicode_literals
 
 import dbus.service
-import gobject
+
+try:
+    import gobject
+except ImportError:
+    from pgi.repository import GObject as gobject
+
 import pprint
 import os
 
-from device import BTGenericDevice
-from media import GenericEndpoint, BTMediaTransport
-from codecs import SBCChannelMode, SBCSamplingFrequency, \
+from .device import BTGenericDevice
+from .media import GenericEndpoint, BTMediaTransport
+from .codecs import SBCChannelMode, SBCSamplingFrequency, \
     SBCAllocationMethod, SBCSubbands, SBCBlocks, A2DP_CODECS, \
     SBCCodecConfig, SBCCodec
-from serviceuuids import SERVICES
-from exceptions import BTIncompatibleTransportAccessType, \
+from .serviceuuids import SERVICES
+from .exceptions import BTIncompatibleTransportAccessType, \
     BTInvalidConfiguration
 
 
