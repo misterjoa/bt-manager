@@ -3,7 +3,7 @@ Information about this fork
 ****************************
 
 This fork has been made in order to have native python3.6 compatibility without installing the package.
-As source repo does not move much, I will contribute as modifications are needed to this code
+As source repo does not move much, I will contribute as modifications are needed to this code.
 I do not own BT-manager PyPI repo, so modifications will be pushed upstream if asked by original maintainers
 
 ****************************
@@ -33,6 +33,8 @@ Debian installation
 
 With python 3.6
 
+::
+
     # needed for python-dbus
     sudo apt-get install build-essential checkinstall libdbus-1-dev libdbus-glib-1-dev
 
@@ -40,7 +42,10 @@ With python 3.6
     pip install cffi python-dbus
 
 Compile codecs and install as debian package
-TODO : modify dir name to bt_manager_codecs for better package naming
+
+**TODO** : modify dir name to ``bt_manager_codecs`` for better package naming
+
+::
 
     cd ./codecs
     make
