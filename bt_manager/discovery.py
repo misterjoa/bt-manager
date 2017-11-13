@@ -2,8 +2,8 @@ from __future__ import unicode_literals
 from xml.etree.ElementTree import XML
 import pprint
 
-from serviceuuids import SERVICES
-from attributes import ATTRIBUTES
+from .serviceuuids import SERVICES
+from .attributes import ATTRIBUTES
 
 
 class BTDiscoveryInfo:
